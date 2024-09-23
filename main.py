@@ -1,6 +1,11 @@
 # main.py
 from datetime import datetime
 
-# Print current date and time
+# Get the current date and time
 now = datetime.now()
-print("Current Date and Time: ", now.strftime("%Y-%m-%d %H:%M:%S"))
+
+# Format to include the day of the week, date, and time
+formatted_time = now.strftime("%A, %Y-%m-%d %H:%M:%S")
+
+# Print the formatted time
+print("Current Date, Time and Day: ", formatted_time)
